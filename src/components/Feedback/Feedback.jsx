@@ -39,8 +39,8 @@ export class Feedback extends Component {
         const { good, neutral, bad } = this.state;
         const total = this.countTotalFeedback();
         const positivePercentage = this.countPositiveFeedbackPercentage();
-        const propertyNames = Object.getOwnPropertyNames(this.state);
-        const values = Object.values(this.state);
+        // const propertyNames = Object.getOwnPropertyNames(this.state);
+        // const values = Object.values(this.state);
         
         return(
         <div>
