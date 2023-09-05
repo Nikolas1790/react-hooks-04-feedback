@@ -29,7 +29,6 @@ export const  App = () =>{
 
                         default:
                             return;
-
         }
        }
    
@@ -39,13 +38,12 @@ export const  App = () =>{
                 <FeedbackOptions options={options} onLeaveFeedback={onLeaveFeedback}/>
               </Section>  
 
-              {result === 0 ?(
+            {result === 0 ?(
               <Notification message="There is no feedback "/>) : (
                 <Section title="Statistics">
                   <Statistics good={good} neutral={neutral} bad={bad} total={result} positivePercentage={positivePercentage}/>
                 </Section>
-         ) }
-
+            )}
         </div>
     )
 }
