@@ -36,12 +36,12 @@ export const  App = () =>{
         <div>
             <Section title="Please leave feedback">
                 <FeedbackOptions options={options} onLeaveFeedback={onLeaveFeedback}/>
-              </Section>  
+            </Section>  
 
             {result === 0 ?(
-              <Notification message="There is no feedback "/>) : (
+                <Notification message="There is no feedback "/>) : (
                 <Section title="Statistics">
-                  <Statistics good={good} neutral={neutral} bad={bad} total={result} positivePercentage={positivePercentage}/>
+                    <Statistics good={good} neutral={neutral} bad={bad} total={result} positivePercentage={positivePercentage}/>
                 </Section>
             )}
         </div>
